@@ -96,13 +96,13 @@ public class Main {
         System.out.println("Задача7");
         short excessWeight = 7000;
         short weightLoss = 250;
-        int daysFirstOption = excessWeight / weightLoss;
+        double daysFirstOption = (double) excessWeight / weightLoss;
         System.out.println("Если каждый день спортсмен будет терять по " + weightLoss + " гр, то потребуется " + daysFirstOption + " дней");
         short weightLoss2 = 500;
-        int daysSecondOption = excessWeight / weightLoss2;
+        double daysSecondOption = (double) excessWeight / weightLoss2;
         System.out.println("Если каждый день спортсмен будет терять по " + weightLoss2 + " гр, то потребуется " + daysSecondOption + " дней");
-        int everageOption = daysFirstOption + daysSecondOption;
-        everageOption = everageOption / 2;
+        double everageWeightLoss = (weightLoss + weightLoss2) / 2d;
+        double everageOption = excessWeight / everageWeightLoss;
         System.out.println(everageOption + " дней в среднем");
     }
     public static void task8 () {
