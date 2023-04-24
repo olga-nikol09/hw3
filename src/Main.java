@@ -17,12 +17,12 @@ public class Main {
         System.out.println("Значение переменной fruits с типом  short равно " + fruits);
         int garden = 493278;
         System.out.println("Значение переменной garden с типом int равно " + garden);
-        long planet = 345629245;
+        long planet = 345629245L;
         System.out.println("Знаечение переменной planet с типом long равно " + planet);
-        float basketWeight = 6;
+        float basketWeight = 6f;
         System.out.println("Значение переменной basketWeight c типом float равно " + basketWeight);
         double boxWeight = 10.9616;
-        System.out.print("Значение переменной boxWeight с типом double равно " + boxWeight);
+        System.out.println("Значение переменной boxWeight с типом double равно " + boxWeight);
     }
     public static void task2 () {
         System.out.println("Задача2");
@@ -63,7 +63,7 @@ public class Main {
         System.out.println("За сутки машина произвела " + day + " штук бутылок");
         int day3 = day * 3;
         System.out.println("За 3 дня машина произвела " + day3 + " штук былок");
-        long month = day3 * 10;
+        int month = day3 * 10;
         System.out.println("За 1 месяц машина произвела " + month + " штук бутылок");
     }
     public static void task5 () {
@@ -110,15 +110,15 @@ public class Main {
         float masha = 67760f;
         float denis = 83690f;
         float christina = 76230f;
-        float annualIncomeMashaBefore = masha * 12f;
-        float annualIncomeDenisBefore = denis * 12f;
-        float annualIncomeChristinaBefore = christina * 12f;
+        float annualIncomeMashaBefore = masha * 12;
+        float annualIncomeDenisBefore = denis * 12;
+        float annualIncomeChristinaBefore = christina * 12;
         masha = masha * 1.1f;
         denis = denis * 1.1f;
         christina = christina * 1.1f;
-        float aIMashaAfter = masha * 12f;
-        float aIDenisAfter = denis * 12f;
-        float aIChristina = christina * 12f;
+        float aIMashaAfter = masha * 12;
+        float aIDenisAfter = denis * 12;
+        float aIChristina = christina * 12;
         float salaryDifferenceMasha = aIMashaAfter % annualIncomeMashaBefore;
         float salaryDifferenceDenis = aIDenisAfter % annualIncomeDenisBefore;
         float salaryDifferenceChristina = aIChristina % annualIncomeChristinaBefore;
